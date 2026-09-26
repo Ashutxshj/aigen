@@ -32,7 +32,7 @@ Yes, this can all run locally on your machine just like before. The `launcher` o
                                   ▼                                            
                         ┌──────────────────┐                                   
                         │ Email Automation │                                   
-                        │    (german)      │                                   
+                        │                  │                                   
                         │ • Drafts Pitches │                                   
                         │ • Formats Leads  │                                   
                         └─────────┬────────┘                                   
