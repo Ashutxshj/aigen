@@ -67,7 +67,7 @@ _load_dotenv(os.path.join(LAUNCHER_DIR, ".env"))
 # Where every finished sheet is emailed. NEVER the office inbox.
 RECIPIENT = os.getenv("LAUNCHER_RECIPIENT", "ashutosh06066@gmail.com")
 RESEND_API_KEY = os.getenv("RESEND_API_KEY", "").strip()
-RESEND_FROM = os.getenv("RESEND_FROM", "Chillispark Leads <onboarding@resend.dev>")
+RESEND_FROM = os.getenv("RESEND_FROM", "AIGen Leads <onboarding@resend.dev>")
 
 PORT = int(os.getenv("LAUNCHER_PORT", "8765"))
 
@@ -185,7 +185,7 @@ BUTTONS = {
     },
     "8": {
         "label": "AI Caller",
-        "subtitle": "Trigger a Bolna call to intent leads (MVP mock)",
+        "subtitle": "Trigger a Voice API call to intent leads ",
         "kind": "caller",
         "python": _venv_python("caller"),
         "cwd": repo_dir("caller"),

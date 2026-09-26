@@ -139,7 +139,7 @@ class Handler(BaseHTTPRequestHandler):
 def main():
     server = ThreadingHTTPServer(("127.0.0.1", config.PORT), Handler)
     url = f"http://127.0.0.1:{config.PORT}/"
-    print(f"Chillispark lead launcher running at {url}")
+    print(f"AIGen lead launcher running at {url}")
     print(f"Leads will be emailed to: {config.RECIPIENT}")
     print("Close this window to stop. Opening your browser...")
     try:

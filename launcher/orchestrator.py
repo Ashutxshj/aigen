@@ -85,7 +85,7 @@ def _draft(temp_file, log, hits):
 
 
 def _mail(temp_file, label, count, drafted, log, hits, body=None):
-    subject = f"Chillispark leads, {label}: {count} new"
+    subject = f"AIGen leads, {label}: {count} new"
     body = body or (
         f"<p><b>{count}</b> new lead(s) from <b>{label}</b>, "
         f"<b>{drafted}</b> with a ready cold-outreach draft in the Message column.</p>"
@@ -287,11 +287,11 @@ def _pipeline_murica(button_id, btn, jobid, log, hits, state):
 
 
 def _pipeline_caller(button_id, btn, jobid, log, hits):
-    """Run the AI Caller MVP."""
+    """Run the AI Caller."""
     args = btn["args"] + ["--sheet", config.INTENT_FILE]
     code = _run(btn["python"], args, btn["cwd"], {}, btn["env_repo"], log, hits)
     log(f"[launcher] {btn['label']} exited {code}")
-    return {"count": 1, "drafted": 0, "mailed": False, "detail": "Calls triggered (mock)"}
+    return {"count": 1, "drafted": 0, "mailed": False, "detail": "Calls triggered "}
 
 
 def run(button_id: str, jobid: str, log, params=None):

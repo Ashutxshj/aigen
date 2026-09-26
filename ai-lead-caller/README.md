@@ -1,19 +1,19 @@
-# AI Lead Caller MVP
+# AI Lead Caller
 
-This is a prototype for integrating a lead generation pipeline with an AI voice caller using [Bolna.ai](https://bolna.ai/).
+This is a prototype for integrating a lead generation pipeline with an AI voice caller using [Voice API.ai](https://Voice API.ai/).
 
 ## Overview
 This tool is meant to sit next to your existing ChiliSpark / Niche scraping engine. 
 1. Your scraping engine finds a lead and extracts context (e.g., website speed is slow, no CTA).
 2. It sends this to the `/calls` endpoint.
-3. This app triggers an outbound call via Bolna using a pre-configured AI Agent.
-4. Bolna conducts the call and sends the transcript/outcome back to the `/webhook/bolna` endpoint.
+3. This app triggers an outbound call via Voice API using a pre-configured AI Agent.
+4. Voice API conducts the call and sends the transcript/outcome back to the `/webhook/Voice API` endpoint.
 
 ## Setup
 1. Create a virtual environment: `python -m venv venv`
 2. Activate it: `venv\Scripts\activate` (Windows)
 3. Install dependencies: `pip install -r requirements.txt`
-4. Set your Bolna API key: `set BOLNA_API_KEY=your_key_here`
+4. Set your Voice API API key: `set Voice API_API_KEY=your_key_here`
 
 ## Running
 Run the FastAPI development server:
@@ -27,7 +27,7 @@ uvicorn main:app --reload
 ```bash
 curl -X POST http://localhost:8000/campaigns \
      -H "Content-Type: application/json" \
-     -d '{"goal": "Book a website demo", "context": "We are ChilliSpark, a web development agency.", "tone": "friendly", "agent_id": "YOUR_BOLNA_AGENT_ID"}'
+     -d '{"goal": "Book a website demo", "context": "We are AIGen, a web development agency.", "tone": "friendly", "agent_id": "YOUR_Voice API_AGENT_ID"}'
 ```
 
 ### 2. Trigger a Call

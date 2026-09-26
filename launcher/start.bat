@@ -1,5 +1,5 @@
 @echo off
-REM Double-click to launch the Chillispark Lead Launcher.
+REM Double-click to launch the AIGen Lead Launcher.
 REM Runs the local server with german's venv Python (the email-automation tool,
 REM renamed on disk; its venv has openpyxl), then opens the button page.
 
