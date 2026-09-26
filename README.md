@@ -22,26 +22,26 @@ Yes, this can all run locally on your machine just like before. The `launcher` o
   │ • Contact Info  │    │ • DM Linking   │     │ • Older websites │    │ • Voice Agent │
   └────────┬────────┘    └────────┬───────┘     └─────────┬────────┘    └──────┬────────┘
            │                      │                       │                    │
-           └──────────────────────┼───────────────────────┘                    │
-                                  ▼                                            │
-                        ┌──────────────────┐                                   │
-                        │  Master Ledgers  │                                   │
-                        │ (.xlsx / .json)  │                                   │
-                        └─────────┬────────┘                                   │
-                                  │                                            │
-                                  ▼                                            │
-                        ┌──────────────────┐                                   │
-                        │ Email Automation │                                   │
-                        │    (german)      │                                   │
-                        │ • Drafts Pitches │                                   │
-                        │ • Formats Leads  │                                   │
-                        └─────────┬────────┘                                   │
-                                  │                                            │
-                                  ▼                                            │
-                         ┌────────────────┐                                    │
-                         │    Mailer      │                                    │
-                         │ (Resend API)   │                                    │
-                         └────────────────┘                                    │
+           └──────────────────────┼───────────────────────┘                    ▼
+                                  ▼                                   ┌───────────────┐
+                        ┌──────────────────┐                          │ User Automated│
+                        │  Master Ledgers  │                          │     Call      │
+                        │ (.xlsx / .json)  │                          └───────────────┘
+                        └─────────┬────────┘                                   
+                                  │                                            
+                                  ▼                                            
+                        ┌──────────────────┐                                   
+                        │ Email Automation │                                   
+                        │    (german)      │                                   
+                        │ • Drafts Pitches │                                   
+                        │ • Formats Leads  │                                   
+                        └─────────┬────────┘                                   
+                                  │                                            
+                                  ▼                                            
+                         ┌────────────────┐                                    
+                         │    Mailer      │                                    
+                         │ (Resend API)   │                                    
+                         └────────────────┘                                    
 ```
 
 ## ⚙️ Tech Stack
@@ -86,7 +86,5 @@ cd launcher
 (If `start.bat` is not working because of missing environments, ensure you have set up the `.venv` in the `german` folder first, as the launcher uses its Python executable).
 
 ## Screenshots
-
-![Architecture Snippet](docs/architecture_snippet.png)
 
 ![Launcher UI](docs/ui_screenshot.png)
