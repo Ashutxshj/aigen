@@ -14,8 +14,8 @@ The `launcher` orchestrates the different sub-tools directly.
            ┌──────────────────────┼───────────────────────┼────────────────────┐
            ▼                      ▼                       ▼                    ▼
   ┌─────────────────┐    ┌────────────────┐     ┌──────────────────┐    ┌───────────────┐
-  │  Data Scrapers  │    │  Social Media  │     │ Intent & Niche   │    │  AI Caller    │
-  │ (data-analysis) │    │   (scraper3)   │     │ (leeds, Niche,   │    │ (ai-caller)   │
+  │  Data Scrapers  │    │  Social Media  │     │ Intent & Niche   │    │   AI Caller   │
+  │ (data-analysis) │    │   (scraper3)   │     │ (leeds, Niche,   │    │               │
   │                 │    │                │     │  murica)         │    │               │
   │ • Website Audits│    │ • Instagram    │     │ • Reddit/Forums  │    │ • Voice API   │
   │ • Contact Info  │    │ • DM Linking   │     │ • Older websites │    │ • Voice Agent │
@@ -23,8 +23,8 @@ The `launcher` orchestrates the different sub-tools directly.
            │                      │                       │                    │
            └──────────────────────┼───────────────────────┘                    ▼
                                   ▼                                   ┌───────────────┐
-                        ┌──────────────────┐                          │ User Automated│
-                        │  Master Ledgers  │                          │     Call      │
+                        ┌──────────────────┐                          │Automated Calls│
+                        │  Master Ledgers  │                          │  (To Leads)   │
                         │ (.xlsx / .json)  │                          └───────────────┘
                         └─────────┬────────┘                                   
                                   │                                            
