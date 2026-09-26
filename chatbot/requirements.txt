@@ -1,0 +1,13 @@
+# Every third-party package this repo imports is listed here.
+#
+# /scraper does NOT do this — it imports openpyxl and never declares it, so a
+# clean `pip install -r requirements.txt` produces a run that appears to succeed
+# and silently writes zero leads. That bug is the reason this file is checked.
+
+requests>=2.32          # core/api_http.py, core/scrape_http.py
+pydantic>=2.7           # core/models.py — the UTC validator lives here
+typer>=0.12             # main.py
+openpyxl>=3.1           # export/excel.py
+dnspython>=2.6          # collectors/newdomains.py — the MX-but-no-site signal
+
+# Gemini is called over stdlib urllib (core/gemini.py). No SDK, on purpose.

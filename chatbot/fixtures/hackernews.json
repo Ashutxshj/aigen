@@ -1,0 +1,20 @@
+{
+  "hits": [
+    {
+      "objectID": "40000001",
+      "created_at_i": 1783746753,
+      "author": "shopowner",
+      "title": "",
+      "story_title": "Ask HN: Freelancer? Seeking freelancer?",
+      "comment_text": "SEEKING FREELANCER | Remote | Small ecommerce shop. We need a new website built, our current one is 8 years old. Email: owner@examplecraftshop.co.uk"
+    },
+    {
+      "objectID": "40000002",
+      "created_at_i": 1783732353,
+      "author": "devperson",
+      "title": "",
+      "story_title": "Ask HN: Freelancer? Seeking freelancer?",
+      "comment_text": "SEEKING WORK | Remote | I am a full stack developer available for hire. My portfolio is at example.com"
+    }
+  ]
+}

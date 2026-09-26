@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "uri": "at://did:plc:mock/app.bsky.feed.post/mock1",
+      "author": {
+        "handle": "salonowner.bsky.social"
+      },
+      "record": {
+        "text": "Just opened my salon and I have no website. Looking for someone to build one, happy to pay.",
+        "createdAt": "2026-07-11T08:00:00.000Z"
+      },
+      "likeCount": 3
+    }
+  ]
+}

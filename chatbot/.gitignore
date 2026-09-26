@@ -1,0 +1,20 @@
+# Secrets.
+.env
+
+# The working store and the output sheet both contain REAL PEOPLE — usernames,
+# permalinks, phone numbers, email addresses. Never commit either.
+*.db
+*.db-wal
+*.db-shm
+*.xlsx
+intent_leads.xlsx
+intent_leads.new.xlsx
+
+# Proxies, if you use them.
+proxies.txt
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/

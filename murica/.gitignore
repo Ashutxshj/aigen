@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+.env
+out/
+seen.json
+age_cache.json
+progress.json

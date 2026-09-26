@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 777001,
+      "time_submitted": 1783753953,
+      "seo_url": "design/build-website-bakery",
+      "title": "Build a website for my new bakery",
+      "description": "I need a simple 5 page website for a bakery opening next month. Must be mobile friendly and let people see our menu.",
+      "budget": {
+        "minimum": 250,
+        "maximum": 750
+      },
+      "currency": {
+        "code": "GBP"
+      }
+    }
+  ]
+}

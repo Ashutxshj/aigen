@@ -1,0 +1,2 @@
+# Everything real comes from the sibling repo's list.
+-r ../leeds/requirements.txt

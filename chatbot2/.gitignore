@@ -1,0 +1,12 @@
+# Secrets.
+.env
+
+# The working store and the sheet contain REAL PEOPLE — same rule as leeds.
+*.db
+*.db-wal
+*.db-shm
+*.xlsx
+
+__pycache__/
+*.py[cod]
+.venv/

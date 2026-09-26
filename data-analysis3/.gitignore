@@ -1,0 +1,9 @@
+.env
+proxies.txt
+seed_places.csv
+__pycache__/
+*.pyc
+.venv/
+venv/
+sends_log.jsonl
+seed_urls.csv

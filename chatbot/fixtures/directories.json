@@ -1,0 +1,23 @@
+{
+  "elements": [
+    {
+      "type": "node",
+      "id": 1234567,
+      "tags": {
+        "name": "Bella Barbers",
+        "shop": "hairdresser",
+        "phone": "+44 113 496 0000"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1234568,
+      "tags": {
+        "name": "Corner Cafe",
+        "amenity": "cafe",
+        "phone": "+44 113 496 0001",
+        "email": "hello@cornercafe.example"
+      }
+    }
+  ]
+}

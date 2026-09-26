@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "question_id": 9001,
+      "creation_date": 1783761048,
+      "link": "https://mock.invalid/se/9001",
+      "title": "How do I get my small business to show up on Google?",
+      "body": "<p>I run a small bakery and we do not have a website. Customers cannot find us. Willing to pay someone to sort this out.</p>",
+      "owner": {
+        "display_name": "bakerjane"
+      },
+      "tags": [
+        "seo"
+      ],
+      "answer_count": 0
+    }
+  ]
+}

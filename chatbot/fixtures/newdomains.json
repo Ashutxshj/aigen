@@ -1,0 +1,14 @@
+{
+  "domains": [
+    {
+      "domain": "newleedsbakery.co.uk",
+      "builder": "shopify",
+      "evidence": "placeholder page (shopify)"
+    },
+    {
+      "domain": "jonesplumbingltd.co.uk",
+      "builder": "mx_no_site",
+      "evidence": "domain accepts email but serves no website"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "data": {
+        "name": "t3_aaa1",
+        "author": "bakerjane",
+        "subreddit": "smallbusiness",
+        "created_utc": 1783750353,
+        "permalink": "/MOCK-DATA-NOT-A-REAL-POST/t3_aaa1",
+        "title": "Opening a bakery next month and I have no website",
+        "selftext": "I just registered my business and we open in 5 weeks. I have an instagram but no website yet. How do I get a website made? What should I budget for this? I run a small bakery in Leeds.",
+        "score": 14
+      }
+    },
+    {
+      "data": {
+        "name": "t3_aaa2",
+        "author": "seoguru99",
+        "subreddit": "SEO",
+        "created_utc": 1783757553,
+        "permalink": "/MOCK-DATA-NOT-A-REAL-POST/t3_aaa2",
+        "title": "I build websites and do SEO - DM me for a free audit",
+        "selftext": "My agency offers SEO services. Check out my portfolio. DM me for a free consultation and my rates.",
+        "score": 2
+      }
+    },
+    {
+      "data": {
+        "name": "t3_aaa3",
+        "author": "plumberpete",
+        "subreddit": "Plumbing",
+        "created_utc": 1783725153,
+        "permalink": "/MOCK-DATA-NOT-A-REAL-POST/t3_aaa3",
+        "title": "How do I show up in search when people google plumber near me?",
+        "selftext": "I own a plumbing company and we are not showing up on google at all. My customers say they cannot find us. Willing to pay someone to sort this out. Budget is flexible.",
+        "score": 31
+      }
+    },
+    {
+      "data": {
+        "name": "t3_aaa4",
+        "author": "devdude",
+        "subreddit": "smallbusiness",
+        "created_utc": 1783739553,
+        "permalink": "/MOCK-DATA-NOT-A-REAL-POST/t3_aaa4",
+        "title": "I built my site last year and here is what I learned",
+        "selftext": "I launched my website and wanted to share lessons. Core web vitals matter a lot.",
+        "score": 50
+      }
+    }
+  ],
+  "comments": [
+    {
+      "data": {
+        "name": "t1_bbb1",
+        "author": "salonsam",
+        "subreddit": "smallbusiness",
+        "created_utc": 1783696353,
+        "permalink": "/MOCK-DATA-NOT-A-REAL-POST/t1_bbb1",
+        "link_title": "Weekly small business thread",
+        "body": "Piggybacking - I run a salon and I do not have a website. Only a facebook page. How much does a website cost these days? I would like to get my business online before the holidays.",
+        "score": 4
+      }
+    }
+  ]
+}
