@@ -1,0 +1,88 @@
+# Chillispark AIGen Monorepo
+
+Welcome to the Chillispark AIGen monorepo! This is the centralized hub for all AI-driven lead generation, scraping, qualification, and automated outbound outreach pipelines. 
+
+Yes, this can all run locally on your machine just like before. The `launcher` orchestrates the different sub-tools directly.
+
+## 🏗️ Product Architecture
+
+```text
+                        ┌─────────────────────────────────────────────────────┐
+                        │                CHILLISPARK LAUNCHER                 │
+                        │       (Local Web UI - FastAPI/SimpleHTTP)           │
+                        └─────────┬───────────────────────┬───────────────────┘
+                                  │                       │
+           ┌──────────────────────┼───────────────────────┼────────────────────┐
+           ▼                      ▼                       ▼                    ▼
+  ┌─────────────────┐    ┌────────────────┐     ┌──────────────────┐    ┌───────────────┐
+  │  Data Scrapers  │    │  Social Media  │     │ Intent & Niche   │    │  AI Caller    │
+  │ (data-analysis) │    │   (scraper3)   │     │ (leeds, Niche,   │    │ (ai-caller)   │
+  │                 │    │                │     │  murica)         │    │               │
+  │ • Website Audits│    │ • Instagram    │     │ • Reddit/Forums  │    │ • Bolna API   │
+  │ • Contact Info  │    │ • DM Linking   │     │ • Older websites │    │ • Voice Agent │
+  └────────┬────────┘    └────────┬───────┘     └─────────┬────────┘    └──────┬────────┘
+           │                      │                       │                    │
+           └──────────────────────┼───────────────────────┘                    │
+                                  ▼                                            │
+                        ┌──────────────────┐                                   │
+                        │  Master Ledgers  │                                   │
+                        │ (.xlsx / .json)  │                                   │
+                        └─────────┬────────┘                                   │
+                                  │                                            │
+                                  ▼                                            │
+                        ┌──────────────────┐                                   │
+                        │ Email Automation │                                   │
+                        │    (german)      │                                   │
+                        │ • Drafts Pitches │                                   │
+                        │ • Formats Leads  │                                   │
+                        └─────────┬────────┘                                   │
+                                  │                                            │
+                                  ▼                                            │
+                         ┌────────────────┐                                    │
+                         │    Mailer      │                                    │
+                         │ (Resend API)   │                                    │
+                         └────────────────┘                                    │
+```
+
+## ⚙️ Tech Stack
+- **Backend/Scripts**: Python 3
+- **Web UI**: HTML/CSS + JS with a Python simple HTTP server backend
+- **Scraping**: `httpx`, `BeautifulSoup`, custom proxy rotators
+- **Automation**: Subprocesses orchestrating different isolated virtual environments
+- **Voice AI**: Bolna API
+- **Email Delivery**: Resend API
+- **Data Storage**: Excel (`openpyxl`), JSON flat files (`seen.json`)
+
+## 🔄 Workflow Diagram
+
+```text
+[1] User opens Launcher Web UI on Localhost
+ │
+ ├─► [2] Selects a Target (e.g., "Niche", "Murica", "AI Caller")
+ │
+ ├─► [3] Launcher spawns a background Python Subprocess 
+ │       running the specific tool in its own isolated `.venv`
+ │
+ ├─► [4] Tool performs scraping/API calls 
+ │       (Searches Google Maps, Reddit, or triggers Voice Agents)
+ │
+ ├─► [5] Tool writes findings to the unified `leads_master.xlsx`
+ │       or specific `out/` temp files.
+ │
+ ├─► [6] `german` (Email Automation) picks up the new leads,
+ │       uses GenAI to craft personalized 1-liner pitches.
+ │
+ └─► [7] Resulting sheet is emailed to you via Resend for manual review.
+```
+
+## 🚀 Running Locally
+
+To run this locally as a monorepo, simply launch the server:
+
+```bash
+cd launcher
+.\start.bat
+```
+(If `start.bat` is not working because of missing environments, ensure you have set up the `.venv` in the `german` folder first, as the launcher uses its Python executable).
+
+*Note: As an AI, I don't have eyes or a web browser to take visual screenshots of the application running on your localhost. To add screenshots to this README, run `start.bat`, take a snippet of the web page with your snipping tool, save it as `screenshot.png` in the repository, and add `![Launcher UI](screenshot.png)` here!*
