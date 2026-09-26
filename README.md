@@ -1,8 +1,7 @@
-# AIGen Monorepo
+# AI Lead Gen
 
-Welcome to the AIGen monorepo! This is the centralized hub for all AI-driven lead generation, scraping, qualification, and automated outbound outreach pipelines. 
-
-Yes, this can all run locally on your machine just like before. The `launcher` orchestrates the different sub-tools directly.
+Centralized hub for all AI-driven lead generation, scraping, qualification, and automated outbound outreach pipelines. 
+The `launcher` orchestrates the different sub-tools directly.
 
 ## 🏗️ Product Architecture
 
