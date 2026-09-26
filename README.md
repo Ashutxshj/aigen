@@ -69,7 +69,7 @@ Yes, this can all run locally on your machine just like before. The `launcher` o
  ├─► [5] Tool writes findings to the unified `leads_master.xlsx`
  │       or specific `out/` temp files.
  │
- ├─► [6] `german` (Email Automation) picks up the new leads,
+ ├─► [6] Email Automation picks up the new leads,
  │       uses GenAI to craft personalized 1-liner pitches.
  │
  └─► [7] Resulting sheet is emailed to you via Resend for manual review.
